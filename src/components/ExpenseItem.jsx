@@ -1,8 +1,9 @@
 import "./ExpenseItem.css";
+import Card from "./Card";
 
 function ExpenseItem(props) {
   return (
-    <div className="expense-item">
+    <Card className="expense-item">
       <div className="expense-date">
         <div className="expense-date__month">
           {props.expenseDate.toLocaleString("default", { month: "long" })}
@@ -16,7 +17,7 @@ function ExpenseItem(props) {
         <h2>{props.expenseTitle}</h2>
       </div>
       <div className="expense-item__price">Rs {props.expenseAmount}</div>
-    </div>
+    </Card>
   );
 }
 export default ExpenseItem;
