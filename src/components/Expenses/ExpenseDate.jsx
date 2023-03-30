@@ -1,9 +1,9 @@
 import React from "react";
 
 export default function ExpenseDate(props) {
-  const month = props.expenseDate.toLocaleString("default", { month: "long" });
-  const day = props.expenseDate.getDate();
-  const year = props.expenseDate.getFullYear();
+  const month = props.date.toLocaleString("default", { month: "long" });
+  const day = props.date.getDate();
+  const year = props.date.getFullYear();
 
   return (
     <div>
