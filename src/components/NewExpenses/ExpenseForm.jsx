@@ -8,17 +8,14 @@ export default function ExpenseForm() {
 
   const titleChangeHandler = (event) => {
     setTitle(event.target.value);
-    console.log(event.target.value);
   };
 
   const amountChangeHandler = (event) => {
     setAmount(event.target.value);
-    console.log(event.target.value);
   };
 
   const dateChangeHandler = (event) => {
     setDate(event.target.value);
-    console.log(event.target.value);
   };
 
   const submitHandler = (event) => {
@@ -31,6 +28,12 @@ export default function ExpenseForm() {
     };
 
     console.log(userEnteredData);
+
+    //Two-Way Binding
+
+    setTitle("");
+    setAmount("");
+    setDate("");
   };
 
   return (
@@ -38,7 +41,7 @@ export default function ExpenseForm() {
       <div className="new-expense__controls">
         <div className="new-expense__control">
           <label>Title</label>
-          <input type="text" onChange={titleChangeHandler} />
+          <input type="text" onChange={titleChangeHandler} value={title} />
         </div>
         <div className="new-expense__control">
           <label>Amount</label>
@@ -47,6 +50,7 @@ export default function ExpenseForm() {
             min="0.01"
             step="0.01"
             onChange={amountChangeHandler}
+            value={amount}
           />
         </div>
         <div className="new-expense__control">
@@ -56,6 +60,7 @@ export default function ExpenseForm() {
             min="1998-08-29"
             step="2025-08-29"
             onChange={dateChangeHandler}
+            value={date}
           />
         </div>
         <div className="new-expense__actions">
