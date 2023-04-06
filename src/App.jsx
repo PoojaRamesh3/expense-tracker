@@ -28,9 +28,13 @@ const App = () => {
     },
   ];
 
+  const addEventListner = (expense) => {
+    console.log("In App.js");
+    console.log(expense);
+  };
   return (
     <>
-      <NewExpense />
+      <NewExpense onAddExpense={addEventListner} />
       <Expenses data={expenses} />
     </>
   );
