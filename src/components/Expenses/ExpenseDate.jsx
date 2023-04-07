@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function ExpenseDate(props) {
   const month = props.date.toLocaleString("default", { month: "long" });
   const day = props.date.getDate();

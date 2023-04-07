@@ -1,5 +1,5 @@
 import ExpenseForm from "./ExpenseForm";
-import "./NewExpense.css";
+import "./Styles/NewExpense.css";
 
 export default function NewExpense(props) {
   const onSaveExpenseData = (userEnteredData) => {

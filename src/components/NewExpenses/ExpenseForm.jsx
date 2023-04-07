@@ -1,5 +1,5 @@
-import "./ExpenseForm.css";
-import React, { useState } from "react";
+import "./Styles/ExpenseForm.css";
+import { useState } from "react";
 
 export default function ExpenseForm(props) {
   const [title, setTitle] = useState("");
