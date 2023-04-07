@@ -9,7 +9,6 @@ const Expenses = (props) => {
 
   const yearChangeHandler = (year) => {
     setYear(year);
-    console.log("Expense" + +year);
   };
 
   return (
