@@ -22,9 +22,9 @@ export default function ExpenseForm(props) {
     event.preventDefault();
 
     const userEnteredData = {
-      enteredTitle: title,
-      enteredAmount: amount,
-      enteredDate: new Date(date),
+      title: title,
+      amount: amount,
+      date: new Date(date),
     };
 
     props.onSaveExpenseData(userEnteredData);
