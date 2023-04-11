@@ -19,7 +19,7 @@ const Expenses = (props) => {
       />
       {props.data.map((item, index) => (
         <ExpenseItem
-          key={index}
+          key={item.id}
           expenseTitle={item.title}
           expenseAmount={item.amount}
           expenseDate={item.date}
